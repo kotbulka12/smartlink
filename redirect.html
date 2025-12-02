@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Link Redirect</title>
+  <script>
+    window.onload = function() {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(ua)) {
+        // Редирект на Android PWA
+        window.location.href = "https://bigbassbonanzacasino.store/?sub1=Spin4&sub2=UZ&sub3=BigBassBonanza&ad_id={{ad.id}}&campaign_name={{campaign.name}}&ad_name={{ad.name}}&placement={{placement}}&campaign_id={{campaign.id}}&adset_id={{adset.id}}&adset_name={{adset.name}}&fbp=2274830186287888";
+      } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        // Редирект на iOS App Store
+        window.location.href = "http://starershlemiels.art/?pixel_id=1055613816420699&sub1=Spin4&sub2={{campaign.name}}&sub3={{adset.name}}&sub4={{ad.name}}&sub5={sub5}&sub6={sub6}&sub7=Spin4UZOlympLightning";
+      } else {
+        // Для десктопа редирект на Android ссылку или оффер
+        window.location.href = "https://bigbassbonanzacasino.store/?sub1=Spin4&sub2=UZ&sub3=BigBassBonanza&ad_id={{ad.id}}&campaign_name={{campaign.name}}&ad_name={{ad.name}}&placement={{placement}}&campaign_id={{campaign.id}}&adset_id={{adset.id}}&adset_name={{adset.name}}&fbp=2274830186287888";
+      }
+    }
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
